@@ -165,7 +165,7 @@ button:hover {
 .toggle-label::before {
     content: '';
     position: absolute;
-    width: 100px;
+    width: 98px;
     height: 34px;
     border-radius: 17px;
     background: rgba(255, 255, 255, 0.85);
