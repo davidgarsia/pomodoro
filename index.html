@@ -10,7 +10,15 @@
 <body>
     <div class="container">
         <h1>Pomodoro Timer</h1>
-        <button id="mode-toggle" class="toggle-button" data-time="25" data-mode="work">Work</button>
+        <div class="toggle-switch-container">
+            <div class="toggle-switch">
+                <input type="checkbox" id="mode-toggle" class="toggle-input" data-time="25" data-mode="work">
+                <label for="mode-toggle" class="toggle-label">
+                    <span class="toggle-text work">Work</span>
+                    <span class="toggle-text break">Break</span>
+                </label>
+            </div>
+        </div>
         <div class="timer">
             <span id="minutes">25</span>:<span id="seconds">00</span>
         </div>

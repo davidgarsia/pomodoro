@@ -23,14 +23,11 @@ class PomodoroTimer {
         this.resetButton.addEventListener('click', () => this.reset());
         
         const toggleButton = document.getElementById('mode-toggle');
-        toggleButton.addEventListener('click', (e) => {
-            const currentMode = e.target.dataset.mode;
-            if (currentMode === 'work') {
-                e.target.textContent = 'Rest';
+        toggleButton.addEventListener('change', (e) => {
+            if (e.target.checked) {
                 e.target.dataset.mode = 'rest';
                 e.target.dataset.time = '5';
             } else {
-                e.target.textContent = 'Work';
                 e.target.dataset.mode = 'work';
                 e.target.dataset.time = '25';
             }
